@@ -139,7 +139,7 @@ class LibraryFactory {
       libraryFile.setPinned(true);
     }
     libraryFile.setFilters(getFilters(libraryFileElement.getChildren()));
-    // todo do we really want these next two to be required?
+    // TODO do we really want these next two to be required?
     libraryFile.setSourceUri(
         getUri(libraryFileElement.getAttribute(ATTRIBUTE_NAME_SOURCE_URI)));
     libraryFile.setJavadocUri(

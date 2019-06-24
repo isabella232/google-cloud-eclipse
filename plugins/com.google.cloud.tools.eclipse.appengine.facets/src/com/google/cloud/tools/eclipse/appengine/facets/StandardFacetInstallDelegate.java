@@ -149,7 +149,7 @@ public class StandardFacetInstallDelegate implements IDelegate {
       return;
     }
 
-    // todo Templates should provide content as an InputStream
+    // TODO Templates should provide content as an InputStream
     targetFile =
         AppEngineConfigurationUtil.createConfigurationFile(
             project,

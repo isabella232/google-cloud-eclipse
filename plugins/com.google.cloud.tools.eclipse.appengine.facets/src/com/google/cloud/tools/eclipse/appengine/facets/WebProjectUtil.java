@@ -225,7 +225,7 @@ public class WebProjectUtil {
     if (component == null || !component.exists()) {
       return false;
     }
-    // todo: should we check for JSPs in jars?
+    // TODO: should we check for JSPs in jars?
     return hasJsps(component.getRootFolder());
   }
 

@@ -67,7 +67,7 @@ import org.xml.sax.SAXException;
 class Pom {
 
   private static final XPathFactory xpathFactory = XPathFactory.newInstance();
-  // todo we're doing enough of this we should import or write some utilities
+  // TODO we're doing enough of this we should import or write some utilities
   private static final DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
   private static final TransformerFactory transformerFactory = TransformerFactory.newInstance();
   private static final NamespaceContext maven4NamespaceContext =
@@ -241,7 +241,7 @@ class Pom {
               }
             }
             
-            // todo latest version may not be needed anymore.
+            // TODO latest version may not be needed anymore.
             if (!MavenCoordinates.LATEST_VERSION.equals(version)) {
               Element versionElement = document.createElementNS(
                   "http://maven.apache.org/POM/4.0.0", "version");

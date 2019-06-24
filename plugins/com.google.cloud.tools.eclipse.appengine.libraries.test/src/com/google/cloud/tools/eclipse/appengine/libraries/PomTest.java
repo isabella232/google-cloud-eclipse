@@ -60,7 +60,7 @@ public class PomTest {
   
   @Rule public final TestProjectCreator projectCreator = new TestProjectCreator();
 
-  // todo we're doing enough of this we should import or write some utilities
+  // TODO we're doing enough of this we should import or write some utilities
   private static final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
   private static final XPathFactory xpathFactory = XPathFactory.newInstance();
 

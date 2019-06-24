@@ -74,7 +74,7 @@ public class DependencyResolver {
     SubMonitor progress = SubMonitor.convert(monitor);
     DependencyFilter filter = DependencyFilterUtils.classpathFilter(JavaScopes.RUNTIME);
     
-    // todo we'd prefer not to depend on m2e here
+    // TODO we'd prefer not to depend on m2e here
 
     String coords = groupId + ":" + artifactId + ":" + version;
     Artifact artifact = new DefaultArtifact(coords);

@@ -23,7 +23,7 @@ import org.eclipse.core.runtime.IPath;
  */
 public enum DataflowProjectValidationStatus {
   
-  // todo externalize these messages
+  // TODO externalize these messages
   
   /**
    * The project is valid and can be created with the current settings.

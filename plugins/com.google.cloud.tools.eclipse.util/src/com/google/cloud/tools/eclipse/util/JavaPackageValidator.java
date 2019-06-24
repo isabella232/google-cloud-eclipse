@@ -34,7 +34,7 @@ public class JavaPackageValidator {
     } else if (packageName.isEmpty()) { // default package is allowed
       return Status.OK_STATUS;
     } else if (packageName.endsWith(".")) { //$NON-NLS-1$
-      // todo or allow this and strip the period
+      // TODO or allow this and strip the period
       return new Status(IStatus.ERROR, PLUGIN_ID, 46, 
           Messages.getString("package.ends.with.period", packageName), null); //$NON-NLS-1$
     } else if (containsWhitespace(packageName)) {

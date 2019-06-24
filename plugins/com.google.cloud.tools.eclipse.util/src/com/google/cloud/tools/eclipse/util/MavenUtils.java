@@ -119,7 +119,7 @@ public class MavenUtils {
       IMavenExecutionContext context = MavenPlugin.getMaven().createExecutionContext();
       return context.execute(
           (context2, monitor2) -> {
-            // todo we'd prefer not to depend on m2e here
+            // TODO we'd prefer not to depend on m2e here
             RepositorySystem system = MavenPluginActivator.getDefault().getRepositorySystem();
             return operation.run(context2, system, SubMonitor.convert(monitor2));
           },

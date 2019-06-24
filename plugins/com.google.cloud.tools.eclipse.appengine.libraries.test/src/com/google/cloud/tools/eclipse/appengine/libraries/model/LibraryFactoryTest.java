@@ -25,7 +25,7 @@ import org.mockito.Mockito;
 
 public class LibraryFactoryTest {
 
-  // todo is there a simple way to load this up from XML instead?
+  // TODO is there a simple way to load this up from XML instead?
   private IConfigurationElement configuration;
   private IConfigurationElement[] libraryFiles = new IConfigurationElement[1];
   private IConfigurationElement[] mavenCoordinates = new IConfigurationElement[1];

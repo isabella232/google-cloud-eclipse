@@ -54,7 +54,7 @@ public abstract class AppEngineProjectWizard extends Wizard implements INewWizar
   public boolean performFinish() {
     retrieveConfigurationValues();
 
-    // todo set up
+    // TODO set up
     IAdaptable uiInfoAdapter = WorkspaceUndoUtil.getUIInfoAdapter(getShell());
     CreateAppEngineWtpProject runnable =
         getAppEngineProjectCreationOperation(config, uiInfoAdapter);

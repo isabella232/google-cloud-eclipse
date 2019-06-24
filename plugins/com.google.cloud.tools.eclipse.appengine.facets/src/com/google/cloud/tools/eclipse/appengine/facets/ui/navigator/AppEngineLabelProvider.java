@@ -117,7 +117,7 @@ public class AppEngineLabelProvider extends LabelProvider implements IStyledLabe
       return resources.createImage(SharedImages.DATASTORE_GREY_IMAGE_DESCRIPTOR);
     } else if (element instanceof AppEngineProjectElement
         || element instanceof AppEngineResourceElement) {
-      // todo Get better images for these resource elements
+      // TODO Get better images for these resource elements
       // CronDescriptor could be a timer/clock?
       // DenialOfServiceDescriptor could be a do-not-enter?
       // DispatchRoutingDescriptor could be a path fork?

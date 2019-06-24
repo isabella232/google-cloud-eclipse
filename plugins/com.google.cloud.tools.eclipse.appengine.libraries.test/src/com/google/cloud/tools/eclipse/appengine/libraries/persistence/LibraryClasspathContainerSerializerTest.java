@@ -260,7 +260,7 @@ public class LibraryClasspathContainerSerializerTest {
     assertFalse(stateFilePath.toFile().exists());
   }
 
-  // todo would it be clearer simply to define an equals method?
+  // TODO would it be clearer simply to define an equals method?
   private static void compare(LibraryClasspathContainer expected,
       LibraryClasspathContainer actual) {
     assertEquals(expected.getPath(), actual.getPath());
