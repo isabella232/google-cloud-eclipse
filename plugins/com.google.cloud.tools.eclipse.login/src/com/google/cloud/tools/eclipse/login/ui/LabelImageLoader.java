@@ -22,7 +22,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.ConcurrentHashMap;
 import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jdt.internal.ui.viewsupport.ImageDisposer;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
 import org.eclipse.swt.widgets.Label;
@@ -49,7 +48,7 @@ public class LabelImageLoader {
     ImageData imageData = cache.get(imageUrl);
     if (imageData != null) {
       Image image = new Image(label.getDisplay(), imageData);
-      label.addDisposeListener(new ImageDisposer(image));
+      label.addDisposeListener(ignored -> image.dispose());
       label.setImage(image);
     } else {
       loadJob = new LabelImageLoadJob(new URL(imageUrl), label);
